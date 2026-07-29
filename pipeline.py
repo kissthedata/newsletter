@@ -17,7 +17,9 @@ SUBSCRIBERS = [
     "sds550808@gmail.com",
     "asktheme@naver.com",
     "esther7949@naver.com",
-    "bommolsun@naver.com"
+    "bommolsun@naver.com",
+    "030823ab@naver.com",
+    "iss7574@naver.com"
 ]
 
 
