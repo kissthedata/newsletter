@@ -7,7 +7,16 @@ KEYWORDS = ["기준금리", "주택담보대출", "부동산 규제", "코스피
 
 SUBSCRIBERS = [
     "qorskawls12@naver.com",
-    "beaknamjin1313@gmail.com"
+    "kwoo1790@naver.com",
+    "kimkim12322@naver.com",
+    "changhyun_95@naver.com",
+    "hongsu9978@naver.com",
+    "rael517@naver.com",
+    "fbdudtj1@naver.com",
+    "ksj911@knu.ac.kr",
+    "sds550808@gmail.com",
+    "asktheme@naver.com",
+    "esther7949@naver.com"
 ]
 
 def format_email_body(topics):
