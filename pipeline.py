@@ -19,7 +19,7 @@ def format_email_body(topics):
           <td style="padding: 16px 0; border-bottom: 1px solid #eee;">
             <span style="color: #999; font-size: 13px;">{i:02d} · {t['count']}건 보도</span><br>
             <a href="{t['link']}" style="color: #222; font-size: 16px; font-weight: 600; text-decoration: none;">
-              <span style="background: linear-gradient(transparent 55%, #fff59d 55%);">{t['topic']}</span>
+              {t.get('emoji', '')} <span style="background: linear-gradient(transparent 55%, #fff59d 55%);">{t['topic']}</span>
             </a>
             <p style="color: #555; font-size: 14px; margin: 8px 0 0; line-height: 1.5;">
               {t['summary']}
@@ -27,7 +27,7 @@ def format_email_body(topics):
           </td>
         </tr>
         """
-
+      
     html = f"""
     <html>
     <body style="font-family: 'Apple SD Gothic Neo', sans-serif; background-color: #f5f5f5; padding: 20px;">
