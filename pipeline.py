@@ -6,8 +6,7 @@ from send_mail import send_email
 KEYWORDS = ["기준금리", "주택담보대출", "부동산 규제", "코스피", "환율"]
 
 SUBSCRIBERS = [
-    "qorskawls12@naver.com",
-    "baeknamjin12@naver.com"
+    "qorskawls12@naver.com"
 ]
 
 def format_email_body(topics):
