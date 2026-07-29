@@ -6,7 +6,8 @@ from send_mail import send_email
 KEYWORDS = ["기준금리", "주택담보대출", "부동산 규제", "코스피", "환율"]
 
 SUBSCRIBERS = [
-    "qorskawls12@naver.com"
+    "qorskawls12@naver.com",
+    "beaknamjin1313@gmail.com"
 ]
 
 def format_email_body(topics):
@@ -47,7 +48,11 @@ def format_email_body(topics):
         </tr>
         <tr>
           <td style="padding: 16px 24px; background: #fafafa; text-align: center;">
-            <p style="color: #999; font-size: 12px; margin: 0;">매일 08:30 자동 발송 · 개인 학습 프로젝트</p>
+            <p style="color: #999; font-size: 12px; margin: 0;">매일 오전 8시 30분에 발송해드려요.</p>
+            <a href="https://forms.gle/dTDGEgD1UgmV2BfA6"
+               style="display: inline-block; padding: 8px 16px; background: #1a1a2e; color: white; font-size: 12px; text-decoration: none; border-radius: 20px;">
+              💬 피드백 남기기
+            </a>
           </td>
         </tr>
       </table>
