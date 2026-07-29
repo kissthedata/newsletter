@@ -5,6 +5,11 @@ from send_mail import send_email
 
 KEYWORDS = ["기준금리", "주택담보대출", "부동산 규제", "코스피", "환율"]
 
+SUBSCRIBERS = [
+    "qorskawls12@naver.com",
+    "baeknamjin12@naver.com"
+]
+
 def format_email_body(topics):
     """그룹핑+요약된 이슈 리스트를 HTML로 변환"""
     
@@ -70,7 +75,7 @@ def run_pipeline():
     send_email(
         subject="오늘의 금융 뉴스 요약",
         body=body,
-        to_email="qorskawls12@naver.com",
+        to_email=SUBSCRIBERS,
         is_html=True
     )
 
