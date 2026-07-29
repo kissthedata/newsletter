@@ -16,8 +16,10 @@ SUBSCRIBERS = [
     "ksj911@knu.ac.kr",
     "sds550808@gmail.com",
     "asktheme@naver.com",
-    "esther7949@naver.com"
+    "esther7949@naver.com",
+    "bommolsun@naver.com"
 ]
+
 
 def format_email_body(topics):
     """그룹핑+요약된 이슈 리스트를 HTML로 변환"""
