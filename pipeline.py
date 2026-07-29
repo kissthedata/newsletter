@@ -15,7 +15,7 @@ def format_email_body(topics):
           <td style="padding: 16px 0; border-bottom: 1px solid #eee;">
             <span style="color: #999; font-size: 13px;">{i:02d} · {t['count']}건 보도</span><br>
             <a href="{t['link']}" style="color: #222; font-size: 16px; font-weight: 600; text-decoration: none;">
-              {t['topic']}
+              <span style="background: linear-gradient(transparent 55%, #fff59d 55%);">{t['topic']}</span>
             </a>
             <p style="color: #555; font-size: 14px; margin: 8px 0 0; line-height: 1.5;">
               {t['summary']}
