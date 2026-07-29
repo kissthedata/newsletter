@@ -23,37 +23,6 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      - name: Debug env check
-        env:
-          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
-          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
-          NAVER_MAIL_ID: ${{ secrets.NAVER_MAIL_ID }}
-          NAVER_MAIL_PW: ${{ secrets.NAVER_MAIL_PW }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          DB_HOST: ${{ secrets.DB_HOST }}
-          DB_PORT: ${{ secrets.DB_PORT }}
-          DB_NAME: ${{ secrets.DB_NAME }}
-          DB_USER: ${{ secrets.DB_USER }}
-          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
-        run: |
-          check() {
-            if [ -z "${!1}" ]; then
-              echo "$1: EMPTY"
-            else
-              echo "$1: OK (length ${#1})"
-            fi
-          }
-          check NAVER_CLIENT_ID
-          check NAVER_CLIENT_SECRET
-          check NAVER_MAIL_ID
-          check NAVER_MAIL_PW
-          check ANTHROPIC_API_KEY
-          check DB_PORT
-          check DB_NAME
-          check DB_USER
-          check DB_PASSWORD
-          echo "DB_HOST: $DB_HOST"
-
       - name: Run Pipeline
         env:
           NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
