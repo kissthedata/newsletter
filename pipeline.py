@@ -5,6 +5,27 @@ from send_mail import send_email
 from datetime import datetime
 
 KEYWORDS = ["기준금리", "주택담보대출", "부동산 규제", "코스피", "환율"]
+
+SUBSCRIBERS = [
+    "qorskawls12@naver.com",
+    "kwoo1790@naver.com",
+    "kimkim12322@naver.com",
+    "changhyun_95@naver.com",
+    "hongsu9978@naver.com",
+    "rael517@naver.com",
+    "fbdudtj1@naver.com",
+    "ksj911@knu.ac.kr",
+    "sds550808@gmail.com",
+    "asktheme@naver.com",
+    "esther7949@naver.com",
+    "bommolsun@naver.com",
+    "030823ab@naver.com",
+    "iss7574@naver.com",
+    "jiseocean@gmail.com",
+    "seomingi649@gmail.com",
+    "ggeum2@kakao.com"
+]
+
 FEEDBACK_FORM_URL = "https://forms.gle/dTDGEgD1UgmV2BfA6"
 
 
@@ -132,11 +153,11 @@ def run_pipeline():
     send_email(
         subject="오늘의 금융 뉴스 요약",
         body=body,
-        to_email="qorskawls12@naver.com",
+        to_email=SUBSCRIBERS,
         is_html=True
     )
 
-    print("파이프라인 완료!")
+    print(f"파이프라인 완료! ({len(SUBSCRIBERS)}명 발송)")
 
 
 if __name__ == "__main__":
