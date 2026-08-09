@@ -92,7 +92,7 @@ def format_email_body(topics):
                           머니픽 오늘의 브리핑
                         </div>
                         <div style="font-family:'SF Mono', Menlo, monospace; font-size:11px; color:#888; margin-top:6px;">
-                          {today_str} · 이슈 {len(topics)}건 · 화제성 순 정렬<span style="color:#3ee06a;">_</span>
+                          {today_str} · 이슈 {len(topics)}건 · 화제성이 높은 순으로 나열했어요!<span style="color:#3ee06a;">_</span>
                         </div>
                       </td>
                     </tr>

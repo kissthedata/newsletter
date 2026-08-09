@@ -23,7 +23,7 @@ def group_and_summarize(news_items):
 - link: 대표 기사 링크 하나
 
 화제성이 높은(count가 큰) 순서로 정렬해서, 아래 JSON 형식으로만 답해줘. 다른 설명 붙이지 마.
-
+그리고, 어려운 단어는 예를 들어, 서킷브레이커 이런 것들은 해당 문장 아래에 쉽게 풀어써줘.
 [
   {{"emoji": "📈", "topic": "...", "count": 2, "summary": "...", "link": "..."}}
 ]
